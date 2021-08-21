@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+
+body {
+    display: grid;
+    grid-template-columns: initial;
+    grid-template-areas: "nav-link main-section";
+}
+
+#navbar {
+    font-family:  'Playfair Display', serif;
+    font-size: larger;
+    background-color: burlywood;
+    padding-right: 10px;
+    position: inherit;
+} 
+
+#main-doc {
+    font-family: 'Raleway', sans-serif;
+    background-color: #7898d3;
+    padding: 10px;
+}
+
+@media (max-width: 500px){
+
+    body {
+        grid-template-areas: "navlink"
+                            "main-section";
+    }
+}
+
+body main p code {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+}
